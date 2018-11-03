@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ejercicio 6 sonatra</title>
+</head>
+<body>
+	<h1>Mi cuenta es: <%= @counter %></h1>
+	<form action="/contador" method="get">
+		<input type="submit" value="Suma!">
+		<input type="hidden" name="count" value="<%= @counter %>" >
+	</form>
+</body>
+</html>
